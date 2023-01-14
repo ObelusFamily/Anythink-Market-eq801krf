@@ -12,4 +12,4 @@ response = openai.Image.create(
     size="256x256",
 )
 
-img_url = response["data"][0]["url"]
+url(response["data"][0]["url"])
