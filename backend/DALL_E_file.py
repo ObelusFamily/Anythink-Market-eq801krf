@@ -2,7 +2,7 @@ import os
 
 import openai
 
-PROMPT = "an image for items that are created without one"
+PROMPT = "Items that are created without one"
 
 openai.api_key = os.getenv("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")
 
