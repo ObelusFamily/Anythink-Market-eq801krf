@@ -9,8 +9,9 @@ const mapDispatchToProps = (dispatch) => ({
 
 const CommentInput = (props) => {
 
-  const {slug, onSubmit, currentUser} = props;
-  const [body, setBody] = useState("");
+  const { slug, onSubmit, currentUser } = props;
+
+  const [body, setBody] = useState('');
 
   const setInputBody = (ev) => {
 
@@ -31,7 +32,7 @@ const CommentInput = (props) => {
 
     });
 
-    setBody("");
+    setBody('');
 
   };
 
@@ -60,6 +61,6 @@ const CommentInput = (props) => {
     </form>
   );
 
-}
+};
 
 export default connect(() => ({}), mapDispatchToProps)(CommentInput);
