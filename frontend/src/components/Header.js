@@ -50,7 +50,7 @@ const LoggedInView = (props) => {
 };
 
 const Header = (props) => {
-  const {currentUser} = props {
+  const {currentUser} = props
     return (
       <nav
         className="navbar navbar-expand-md navbar-dark"
@@ -66,8 +66,7 @@ const Header = (props) => {
           <LoggedOutView currentUser={currentUser} />
         )}
       </nav>
-    );
-  }
+    )
 }
 
 export default Header;
