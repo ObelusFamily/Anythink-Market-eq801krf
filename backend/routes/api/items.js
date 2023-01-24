@@ -160,7 +160,7 @@ router.post("/", auth.required, function(req, res, next) {
             n: 1,
             size: "256x256",
           });
-          item.image = response.data.data[0].url
+          item.image = response.data.data[0].url;
 
         } catch (error) {
           console.log(error);
