@@ -11,7 +11,7 @@ const openAIConfig = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const openai = new OpenAIApi(openAIConfig);
+const openAI = new OpenAIApi(openAIConfig);
 
 // Preload item objects on routes with ':item'
 router.param("item", function(req, res, next, slug) {
@@ -155,7 +155,7 @@ router.post("/", auth.required, function(req, res, next) {
 
       if(!item?.image){
         try {
-          const response = await openai.createImage({
+          const response = await openAI.createImage({
             prompt: item?.title,
             n: 1,
             size: "256x256",
